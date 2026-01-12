@@ -7,7 +7,8 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "node --test",
-    "example": "npm run build && node dist/tools/example.js"
+    "example": "npm run build && node dist/tools/example.js",
+    "test-mcp": "npm run build && node dist/tools/test-mcp.js"
   },
   "keywords": [
     "event-sourcing",
