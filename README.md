@@ -17,6 +17,12 @@ npm run example
 
 # Test MCP server
 npm run test-mcp
+
+# Generate views
+npm run views
+
+# Sync external data (requires API credentials)
+npm run sync
 ```
 
 ## 📖 Documentation
@@ -25,6 +31,8 @@ npm run test-mcp
 - **[CLAUDE.md](./CLAUDE.md)** - Instructions for working with this codebase
 - **[PHASE1.md](./PHASE1.md)** - Core infrastructure (complete ✅)
 - **[PHASE2.md](./PHASE2.md)** - MCP server (complete ✅)
+- **[PHASE3.md](./PHASE3.md)** - View generation (complete ✅)
+- **[PHASE4.md](./PHASE4.md)** - External integrations (complete ✅)
 - **[MCP-SETUP.md](./MCP-SETUP.md)** - Configure Claude Desktop
 
 ## 🎯 Features
@@ -42,16 +50,17 @@ npm run test-mcp
 - `log_event`, `query_events`, `get_summary`
 - Full Claude Desktop integration
 
-### Phase 3: View Generation (planned)
+### Phase 3: View Generation ✅
 - Open tasks markdown view
 - Weekly review reports
 - Goal status dashboard
-- Auto-regeneration scripts
+- Auto-regeneration script (`npm run views`)
 
-### Phase 4: External Sync (planned)
-- Strava activity sync
-- Fitbit health data sync
-- Idempotent sync operations
+### Phase 4: External Sync ✅
+- Strava activity sync (`npm run sync:strava`)
+- Fitbit health data sync (`npm run sync:fitbit`)
+- Idempotent, incremental sync operations
+- OAuth token refresh handling
 
 ## 🔧 Usage with Claude
 

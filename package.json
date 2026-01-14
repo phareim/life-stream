@@ -8,7 +8,12 @@
     "dev": "tsc --watch",
     "test": "node --test",
     "example": "npm run build && node dist/tools/example.js",
-    "test-mcp": "npm run build && node dist/tools/test-mcp.js"
+    "test-mcp": "npm run build && node dist/tools/test-mcp.js",
+    "test-sync": "npm run build && node dist/tools/test-sync.js",
+    "views": "npm run build && node dist/tools/generate-views.js",
+    "sync:strava": "npm run build && node dist/tools/sync-strava.js",
+    "sync:fitbit": "npm run build && node dist/tools/sync-fitbit.js",
+    "sync": "npm run sync:strava && npm run sync:fitbit"
   },
   "keywords": [
     "event-sourcing",

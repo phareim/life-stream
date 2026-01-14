@@ -7,3 +7,5 @@
 export * from './types.js';
 export * from './events.js';
 export * from './query.js';
+export * from './views.js';
+export * from './sync.js';
